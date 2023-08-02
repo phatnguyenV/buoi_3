@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "27587540BBF72FBD946B007462267893",
+  "keywordClasses": [
+    {
+      "name": "test.CookieWrite",
+      "keywordMethods": [
+        {
+          "name": "loadCookiesFromFile",
+          "parameters": [
+            {
+              "name": "filePath",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
