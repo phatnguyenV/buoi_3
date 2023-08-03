@@ -46,13 +46,15 @@ WebUI.scrollToPosition(0, 300)
 WebUI.delay(5)
 
 WebUI.sendKeys(txt_store_name, GlobalVariable.new_input)
-
 //WebUI.sendKeys(txt_store_name, domain)
+
+def number = CustomKeywords.'test.ExtractNumber.extractNumber'(GlobalVariable.domain)
+
 // Vòng lặp check nếu domain đã tồn tại thì extract số đuôi + 1
 // Xong xoá text và thử nhập domain mới
 // Thoát vòng lặp đến khi không còn báo lỗi
 while (true) {
-    def number = CustomKeywords.'test.ExtractNumber.extractNumber'(GlobalVariable.domain)
+    
 
     def newInput = CustomKeywords.'test.ReplaceNumber.replaceNumber'(GlobalVariable.domain, number)
 
