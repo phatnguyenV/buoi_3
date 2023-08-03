@@ -18,7 +18,6 @@ import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 import org.openqa.selenium.Rectangle as Rectangle
 import org.openqa.selenium.remote.server.DriverFactory as DriverFactory
 import internal.GlobalVariable as GlobalVariablvere
-import test.CookieRead as CookieRead
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebDriver as WebDriver
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
@@ -28,14 +27,15 @@ import org.openqa.selenium.Capabilities as Capabilities
 import org.openqa.selenium.remote.DesiredCapabilities as DesiredCapabilities
 import internal.GlobalVariable as GlobalVariable
 
+// Khởi tạo chromre driver  
 System.setProperty('webdriver.chrome.driver', DriverFactory.getChromeDriverPath())
-
+// Khởi tạo chrome option để custom lại chrome driver
 ChromeOptions options = new ChromeOptions()
 
 options.addArguments('start-maximized')
 
 WebDriver driver = new ChromeDriver(options)
-
+//Cập nhật lại web driver với options đã được custom
 DriverFactory.changeWebDriver(driver)
 
 driver.get(url)
@@ -60,6 +60,8 @@ WebUI.click(btn_login, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
 
+// Chụp toàn màn hình Page và lưu trong folder "screenshot" của project này
 WebUI.takeFullPageScreenshot('screenshot/login_success.png')
 
-CustomKeywords.'test.CookieRead.storeCookiesAsJson'('Cookies.data')
+// Gọi hàm "storeCookiesAsJson" từ Keywords "CookieHandling" để lưu cookie của web thành file dạng Json
+//CustomKeywords.'test.CookieHandling.storeCookiesAsJson'('Cookies.data')

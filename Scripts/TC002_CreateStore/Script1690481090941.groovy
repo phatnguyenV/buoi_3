@@ -28,11 +28,9 @@ import org.openqa.selenium.chrome.ChromeOptions as ChromeOptions
 import org.openqa.selenium.Capabilities as Capabilities
 import org.openqa.selenium.remote.DesiredCapabilities as DesiredCapabilities
 
-
 //def storeName = "phatnt-newstore-31"
 //DriverFactory.getWebDriver().manage().deleteAllCookies()
-//CustomKeywords.'test.CookieRead.loadCookiesFromFile'("Cookies.data")
-
+//CustomKeywords.'test.CookieHandling.loadCookiesFromFile'("Cookies.data")
 WebUI.navigateToUrl(url)
 
 WebUI.waitForElementVisible(a_select_1st_account, 10)
@@ -50,9 +48,12 @@ WebUI.delay(5)
 WebUI.sendKeys(txt_store_name, GlobalVariable.new_input)
 
 //WebUI.sendKeys(txt_store_name, domain)
-def number = CustomKeywords.'test.ExtractNumber.extractNumber'(GlobalVariable.domain)
-
+// Vòng lặp check nếu domain đã tồn tại thì extract số đuôi + 1
+// Xong xoá text và thử nhập domain mới
+// Thoát vòng lặp đến khi không còn báo lỗi
 while (true) {
+    def number = CustomKeywords.'test.ExtractNumber.extractNumber'(GlobalVariable.domain)
+
     def newInput = CustomKeywords.'test.ReplaceNumber.replaceNumber'(GlobalVariable.domain, number)
 
     try {
@@ -69,7 +70,10 @@ while (true) {
         def isError = WebUI.verifyElementPresent(txt_error, 3, FailureHandling.OPTIONAL)
 
         if (!(isError)) {
-			GlobalVariable.domain = newInput
+			// Trước khi thoát vòng lặp, lưu lại domain này cho next test case 
+			// Katalon chỉ lưu value này trong lúc chạy, chạy xong sẽ reverse về orginal value như Profies
+            GlobalVariable.domain = newInput
+
             break
         }
     }
