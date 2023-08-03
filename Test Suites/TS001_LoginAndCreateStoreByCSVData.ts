@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>TS001_LoginAndCreateStore1</name>
+   <name>TS001_LoginAndCreateStoreByCSVData</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,9 +10,9 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>f904518a-b55c-4b33-a4f0-89dd5bb15bd6</testSuiteGuid>
+   <testSuiteGuid>7b1aefe9-e983-4e62-a819-0231f4fac80d</testSuiteGuid>
    <testCaseLink>
-      <guid>90adee66-1d3a-443d-8a56-340403608eb8</guid>
+      <guid>b79065ee-892e-49c8-b7db-d575e2e5cf48</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/TC001_LoginShopify</testCaseId>
@@ -67,10 +67,19 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>e4c3b77e-cdc2-4954-92d1-c352bf28b4f1</guid>
+      <guid>5fe375e5-276e-40f6-8c95-cfec00c853c8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/TC002_CreateStore</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>dd50adb3-35b1-4566-88dd-5c41951948f4</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>2-2</value>
+         </iterationEntity>
+         <testDataId>Data Files/domain</testDataId>
+      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -103,9 +112,9 @@
          <variableId>b44bf12f-e1ff-4b80-aaab-73bbaca755b2</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>dd50adb3-35b1-4566-88dd-5c41951948f4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>domain</value>
          <variableId>91e80cf4-db16-4786-a960-edd629b168c4</variableId>
       </variableLink>
       <variableLink>
@@ -122,10 +131,19 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>1fbe55ab-db5e-42f0-a8ea-a7d73ee2c315</guid>
+      <guid>fc59c859-3fd1-42bc-9541-746f222f03e5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/TC003_InstallApp</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>3f01590f-84ff-4ef1-abe3-b3417674eb5f</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>2-2</value>
+         </iterationEntity>
+         <testDataId>Data Files/domain</testDataId>
+      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -170,9 +188,9 @@
          <variableId>7c849cf7-01a2-4ddd-bf9e-bb62ba448d65</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>3f01590f-84ff-4ef1-abe3-b3417674eb5f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>domain</value>
          <variableId>f6db0e20-7d3f-40e3-9f68-72e19652c43d</variableId>
       </variableLink>
    </testCaseLink>
