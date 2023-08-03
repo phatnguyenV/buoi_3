@@ -51,7 +51,7 @@ WebUI.sendKeys(txt_store_name, GlobalVariable.new_input)
 def number = CustomKeywords.'test.ExtractNumber.extractNumber'(GlobalVariable.domain)
 
 // Vòng lặp check nếu domain đã tồn tại thì extract số đuôi + 1
-// Xong xoá text và thử nhập domain mới
+// Xong xoá text và thử nhập lại domain mới
 // Thoát vòng lặp đến khi không còn báo lỗi
 while (true) {
     
