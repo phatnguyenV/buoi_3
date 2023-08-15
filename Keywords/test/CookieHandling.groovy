@@ -37,6 +37,12 @@ import groovy.json.JsonSlurper
 
 @Keyword
 def storeCookiesAsJson(String filePath) {
+
+	File existingFile = new File(filePath)
+	if (existingFile.exists()) {
+		existingFile.delete()
+	}
+
 	Set<Cookie> cookiesSet = DriverFactory.getWebDriver().manage().getCookies()
 	List cookiesList = []
 
@@ -74,7 +80,7 @@ def loadCookiesFromFile(String filePath) {
 			boolean secure = Boolean.parseBoolean(cookieData.secure)
 
 			// Set the domain explicitly to match the current domain of the page
-			String currentDomain = "https://accounts.shopify.com/" // Replace with the actual domain of the page being tested
+			String currentDomain = "https://develop.trueprofit-web.pages.dev/" // Replace with the actual domain of the page being tested
 
 			Cookie cookie = new Cookie(cookieData.name, cookieData.value, currentDomain, cookieData.path, expirationDate, secure)
 			DriverFactory.getWebDriver().manage().addCookie(cookie)

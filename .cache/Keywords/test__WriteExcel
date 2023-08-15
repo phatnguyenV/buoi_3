@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "3AEB02C51BBFA141A8F4A3F244411582",
+  "keywordClasses": [
+    {
+      "name": "test.WriteExcel",
+      "keywordMethods": [
+        {
+          "name": "savetoExcel",
+          "parameters": [
+            {
+              "name": "name",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

@@ -6,7 +6,7 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://auto2023.myshopify.com/'</initValue>
+      <initValue>'https://app.trueprofit.io/'</initValue>
       <name>url</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -18,5 +18,10 @@
       <description></description>
       <initValue>''</initValue>
       <name>new_input</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'4aUHZLRHJF4='</initValue>
+      <name>default_password</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -14,4 +14,14 @@
       <initValue>''</initValue>
       <name>new_input</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'.trueprofit-web.pages.dev/'</initValue>
+      <name>url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'4aUHZLRHJF4='</initValue>
+      <name>default_password</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

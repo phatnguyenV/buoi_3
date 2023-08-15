@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFA004_UninstallAppByDomain</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dc1b530f-0f4c-4a2a-8ced-9acc736b06c3</testCaseGuid>
+</TestCaseEntity>

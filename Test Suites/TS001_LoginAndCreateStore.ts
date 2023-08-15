@@ -15,7 +15,7 @@
       <guid>90adee66-1d3a-443d-8a56-340403608eb8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TC001_LoginShopify</testCaseId>
+      <testCaseId>Test Cases/Shopify Admin/SFA001_LoginShopify</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -65,12 +65,18 @@
          <value></value>
          <variableId>30b1ddcf-bd91-4abb-84fe-fbf24aab9989</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>888efe1f-ba54-4acb-a04d-f04c8b38fc67</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>e4c3b77e-cdc2-4954-92d1-c352bf28b4f1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TC002_CreateStore</testCaseId>
+      <testCaseId>Test Cases/Shopify Admin/SFA002_CreateStore</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -125,14 +131,8 @@
       <guid>1fbe55ab-db5e-42f0-a8ea-a7d73ee2c315</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TC003_InstallApp</testCaseId>
+      <testCaseId>Test Cases/Shopify Admin/SFA003_InstallApp</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>573f2675-b22f-47e3-b80d-d07366259627</variableId>
-      </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>

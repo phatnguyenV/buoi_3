@@ -15,7 +15,7 @@
       <guid>b79065ee-892e-49c8-b7db-d575e2e5cf48</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TC001_LoginShopify</testCaseId>
+      <testCaseId>Test Cases/Shopify Admin/SFA001_LoginShopify</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -65,12 +65,18 @@
          <value></value>
          <variableId>30b1ddcf-bd91-4abb-84fe-fbf24aab9989</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>888efe1f-ba54-4acb-a04d-f04c8b38fc67</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>5fe375e5-276e-40f6-8c95-cfec00c853c8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TC002_CreateStore</testCaseId>
+      <testCaseId>Test Cases/Shopify Admin/SFA002_CreateStore</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>dd50adb3-35b1-4566-88dd-5c41951948f4</id>
@@ -134,7 +140,7 @@
       <guid>fc59c859-3fd1-42bc-9541-746f222f03e5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TC003_InstallApp</testCaseId>
+      <testCaseId>Test Cases/Shopify Admin/SFA003_InstallApp</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>3f01590f-84ff-4ef1-abe3-b3417674eb5f</id>
@@ -145,12 +151,6 @@
          <testDataId>Data Files/domain</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>573f2675-b22f-47e3-b80d-d07366259627</variableId>
-      </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
