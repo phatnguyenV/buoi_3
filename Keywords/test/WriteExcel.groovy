@@ -32,7 +32,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class WriteExcel {
 	@Keyword
 	public void savetoExcel(String name) throws IOException{
-		String fileName = "temp_email_mca.xlsx";
+		String fileName = "TestData/temp_email_mca.xlsx";
 		File excelFile = new File(fileName);
 		XSSFWorkbook workbook;
 
@@ -54,7 +54,7 @@ public class WriteExcel {
 		Cell cell = row.createCell(0);
 		cell.setCellType(cell.CELL_TYPE_STRING);
 		cell.setCellValue(name);
-		FileOutputStream fos = new FileOutputStream("temp_email_mca.xlsx");
+		FileOutputStream fos = new FileOutputStream("TestData/temp_email_mca.xlsx");
 		workbook.write(fos);
 		fos.close();
 	}

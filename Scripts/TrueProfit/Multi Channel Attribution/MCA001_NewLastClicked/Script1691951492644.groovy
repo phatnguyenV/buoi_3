@@ -79,6 +79,8 @@ WebUI.waitForElementPresent(add_to_cart, 3)
 
 WebUI.click(add_to_cart)
 
+WebUI.waitForElementPresent(view_cart, 3)
+
 WebUI.click(view_cart)
 
 WebUI.waitForElementPresent(checkout_in_cart, 3)
@@ -122,6 +124,8 @@ while (true) {
 email_10m = WebUI.getAttribute(temp_email, 'value')
 CustomKeywords.'test.WriteExcel.savetoExcel'(email_10m)
 
+WebUI.comment(email_10m)
+
 WebUI.closeWindowIndex(currentWindow + 1)
 
 WebUI.switchToWindowIndex(currentWindow)
@@ -161,7 +165,7 @@ WebUI.waitForElementPresent(btn_continue, 2)
 WebUI.click(btn_continue)
 
 //Click Continue to payment
-//WebUI.waitForElementPresent(iframe_card_number, 2)
+WebUI.waitForElementPresent(iframe_card_number, 2)
 WebUI.switchToFrame(iframe_card_number, 2)
 
 WebUI.scrollToElement(card_number, 2)
@@ -193,4 +197,6 @@ WebUI.switchToDefaultContent()
 
 WebUI.click(btn_continue)
 
-WebUI.delay(2)
+WebUI.waitForElementPresent(span_continue_shopping, 10)
+
+WebUI.delay(1)

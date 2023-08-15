@@ -34,26 +34,22 @@ def AdSnapchat = [('antique_drawers_4111') : '?tp_source=snapchat&tp_adid=4111&t
 
 def AdPinterest = [('antique_drawers_5111') : '?tp_source=pinterest&tp_adid=5111&tp_productid=8326381666626', ('antique_drawers_5112') : '?tp_source=pinterest&tp_adid=5112&tp_productid=8326381666626']
 
-WebUI.callTestCase(findTestCase('TrueProfit/Multi Channel Attribution/MCA001_NewLastClicked'), [('input_password') : findTestObject(
-            'Shopify Admin/StoreFront/input_password'), ('btn_enter') : findTestObject('Shopify Admin/StoreFront/btn_enter')
-        , ('main_content') : findTestObject('Shopify Admin/StoreFront/main_content'), ('store_url') : 'https://enterprise-new.myshopify.com/'
-        , ('btn_buy_it_now') : findTestObject('Shopify Admin/StoreFront/btn_buy_it_now'), ('email') : findTestObject('Shopify Admin/StoreFront/input_email')
-        , ('lastname') : findTestObject('Shopify Admin/StoreFront/input_last_name'), ('address') : findTestObject('Shopify Admin/StoreFront/input_address')
-        , ('first_address_suggestion') : findTestObject('Shopify Admin/StoreFront/li_first_address'), ('temp_email') : findTestObject(
-            'Shopify Admin/StoreFront/input_temp_email'), ('duetime') : findTestObject('Shopify Admin/StoreFront/p_duetime')
-        , ('get_another_email') : findTestObject('Shopify Admin/StoreFront/a_get_another_email'), ('extend_email') : findTestObject(
-            'Shopify Admin/StoreFront/a_extend_email'), ('recover_email') : findTestObject('Shopify Admin/StoreFront/a_recover_email')
-        , ('email_timeout') : findTestObject('Shopify Admin/StoreFront/strong_email_timeout'), ('btn_continue') : findTestObject(
-            'Shopify Admin/StoreFront/btn_continue'), ('card_number') : findTestObject('Shopify Admin/StoreFront/input_card_number')
-        , ('name_on_card') : findTestObject('Shopify Admin/StoreFront/input_name_on_card'), ('expiration') : findTestObject(
-            'Shopify Admin/StoreFront/input_expiration'), ('security_code') : findTestObject('Shopify Admin/StoreFront/input_security_code')
-        , ('btn_close_suggestion') : findTestObject('Shopify Admin/StoreFront/btn_close_suggestion'), ('iframe_card_number') : findTestObject(
-            'Shopify Admin/StoreFront/iframe_card_number'), ('iframe_name_on_card') : findTestObject('Shopify Admin/StoreFront/iframe_name_on_card')
-        , ('iframe_expiration') : findTestObject('Shopify Admin/StoreFront/iframe_expiration'), ('iframe_security_code') : findTestObject(
-            'Shopify Admin/StoreFront/iframe_security_code'), ('plus_quantity') : findTestObject('Shopify Admin/StoreFront/btn_plus_quantity')
-        , ('add_to_cart') : findTestObject('Shopify Admin/StoreFront/btn_add_to_cart'), ('view_cart') : findTestObject('Shopify Admin/StoreFront/a_view_cart')
-        , ('check_out') : findTestObject('Shopify Admin/StoreFront/btn_check_out'), ('checkout_in_cart') : findTestObject(
-            'Shopify Admin/StoreFront/btn_checkout_in_cart')], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('TrueProfit/Multi Channel Attribution/MCA001_NewLastClicked'), [('input_password') : findTestObject('Shopify Admin/StoreFront/input_password')
+        , ('btn_enter') : findTestObject('Shopify Admin/StoreFront/btn_enter'), ('main_content') : findTestObject('Shopify Admin/StoreFront/main_content')
+        , ('store_url') : 'https://enterprise-new.myshopify.com/', ('btn_buy_it_now') : findTestObject('Shopify Admin/StoreFront/btn_buy_it_now')
+        , ('email') : findTestObject('Shopify Admin/StoreFront/input_email'), ('lastname') : findTestObject('Shopify Admin/StoreFront/input_last_name')
+        , ('address') : findTestObject('Shopify Admin/StoreFront/input_address'), ('first_address_suggestion') : findTestObject('Shopify Admin/StoreFront/li_first_address')
+        , ('temp_email') : findTestObject('Shopify Admin/StoreFront/input_temp_email'), ('duetime') : findTestObject('Shopify Admin/StoreFront/p_duetime')
+        , ('get_another_email') : findTestObject('Shopify Admin/StoreFront/a_get_another_email'), ('extend_email') : findTestObject('Shopify Admin/StoreFront/a_extend_email')
+        , ('recover_email') : findTestObject('Shopify Admin/StoreFront/a_recover_email'), ('email_timeout') : findTestObject('Shopify Admin/StoreFront/strong_email_timeout')
+        , ('btn_continue') : findTestObject('Shopify Admin/StoreFront/btn_continue'), ('card_number') : findTestObject('Shopify Admin/StoreFront/input_card_number')
+        , ('name_on_card') : findTestObject('Shopify Admin/StoreFront/input_name_on_card'), ('expiration') : findTestObject('Shopify Admin/StoreFront/input_expiration')
+        , ('security_code') : findTestObject('Shopify Admin/StoreFront/input_security_code'), ('btn_close_suggestion') : findTestObject('Shopify Admin/StoreFront/btn_close_suggestion')
+        , ('iframe_card_number') : findTestObject('Shopify Admin/StoreFront/iframe_card_number'), ('iframe_name_on_card') : findTestObject('Shopify Admin/StoreFront/iframe_name_on_card')
+        , ('iframe_expiration') : findTestObject('Shopify Admin/StoreFront/iframe_expiration'), ('iframe_security_code') : findTestObject('Shopify Admin/StoreFront/iframe_security_code')
+        , ('plus_quantity') : findTestObject('Shopify Admin/StoreFront/btn_plus_quantity'), ('add_to_cart') : findTestObject('Shopify Admin/StoreFront/btn_add_to_cart')
+        , ('view_cart') : findTestObject('Shopify Admin/StoreFront/a_view_cart'), ('check_out') : findTestObject('Shopify Admin/StoreFront/btn_check_out')
+        , ('checkout_in_cart') : findTestObject('Shopify Admin/StoreFront/btn_checkout_in_cart')], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.navigateToUrl(store_url)
 
@@ -72,7 +68,7 @@ WebUI.click(btn_buy_it_now)
 WebUI.verifyElementPresent(email, 3)
 
 // Specify the Excel file path and sheet name
-def excelFilePath = 'temp_email_mca.xlsx'
+def excelFilePath = 'TestData/temp_email_mca.xlsx'
 
 def sheetName = 'Sheet1'
 
@@ -82,7 +78,7 @@ def email_10m = ''
 List<Map> excelData = ReadExcel.readExcelData(excelFilePath, sheetName)
 
 // Loop through the data and perform test steps
-for (Map<String, String> rowData : excelData) {
+for (Map rowData : excelData) {
     email_10m = (rowData['Email'])
 }
 
@@ -153,4 +149,7 @@ WebUI.switchToDefaultContent()
 
 WebUI.click(btn_continue)
 
-WebUI.delay(2)
+WebUI.waitForElementPresent(span_continue_shopping, 10)
+
+WebUI.delay(1)
+

@@ -40,7 +40,6 @@ WebUI.switchToWindowIndex(currentWindow + 1)
 
 WebUI.navigateToUrl(full_url)
 
-//WebUI.switchToWindowIndex(currentWindow)
 while (WebUI.verifyElementPresent(input_email, 1, FailureHandling.OPTIONAL)) {
     try {
         WebUI.waitForElementVisible(input_email, 3)

@@ -135,19 +135,19 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>14e06e53-bb8f-4cd1-a2b3-8634722d610b</variableId>
+      <variableId>7190fed8-c590-47eb-b825-580a9843487a</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>14e06e53-bb8f-4cd1-a2b3-8634722d610b</variableId>
+      <variableId>c8410c6f-4683-45a0-9eb5-dfd2a8327768</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>14e06e53-bb8f-4cd1-a2b3-8634722d610b</variableId>
+      <variableId>833665e3-890d-4bc4-adab-28691a4f3e82</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
@@ -184,6 +184,12 @@
       <type>DEFAULT</type>
       <value></value>
       <variableId>6bbaddec-7508-4f4d-8db9-61157ec01775</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>140479dd-3e5b-4f46-ae5e-87d2818be366</variableId>
    </variableLinks>
    <variable>
       <defaultValue>findTestObject('Shopify Admin/StoreFront/input_password')</defaultValue>
@@ -394,5 +400,12 @@
       <id>6bbaddec-7508-4f4d-8db9-61157ec01775</id>
       <masked>false</masked>
       <name>checkout_in_cart</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Shopify Admin/StoreFront/span_continue_shopping')</defaultValue>
+      <description></description>
+      <id>140479dd-3e5b-4f46-ae5e-87d2818be366</id>
+      <masked>false</masked>
+      <name>span_continue_shopping</name>
    </variable>
 </TestCaseEntity>

@@ -395,4 +395,11 @@
       <masked>false</masked>
       <name>checkout_in_cart</name>
    </variable>
+   <variable>
+      <defaultValue>findTestObject('Shopify Admin/StoreFront/span_continue_shopping')</defaultValue>
+      <description></description>
+      <id>140479dd-3e5b-4f46-ae5e-87d2818be366</id>
+      <masked>false</masked>
+      <name>span_continue_shopping</name>
+   </variable>
 </TestCaseEntity>

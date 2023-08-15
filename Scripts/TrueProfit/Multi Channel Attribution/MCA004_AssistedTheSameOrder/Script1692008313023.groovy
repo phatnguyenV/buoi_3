@@ -184,4 +184,6 @@ WebUI.switchToDefaultContent()
 
 WebUI.click(btn_continue)
 
-WebUI.delay(2)
+WebUI.waitForElementPresent(span_continue_shopping, 10)
+
+WebUI.delay(1)
